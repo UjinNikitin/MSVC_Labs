@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{E8AB584D-9925-41CB-B230-C57884C8845E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagesSvc", "MessagesSvc\MessagesSvc.csproj", "{742D3011-EC44-4C32-9AAA-62EC432BCB03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingSvc", "LoggingSvc\LoggingSvc.csproj", "{DF89BFB3-B98F-46B1-B991-0B22BC174E0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8AB584D-9925-41CB-B230-C57884C8845E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8AB584D-9925-41CB-B230-C57884C8845E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8AB584D-9925-41CB-B230-C57884C8845E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8AB584D-9925-41CB-B230-C57884C8845E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{742D3011-EC44-4C32-9AAA-62EC432BCB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{742D3011-EC44-4C32-9AAA-62EC432BCB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{742D3011-EC44-4C32-9AAA-62EC432BCB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{742D3011-EC44-4C32-9AAA-62EC432BCB03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF89BFB3-B98F-46B1-B991-0B22BC174E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF89BFB3-B98F-46B1-B991-0B22BC174E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF89BFB3-B98F-46B1-B991-0B22BC174E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF89BFB3-B98F-46B1-B991-0B22BC174E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72163671-2695-4860-A43D-CBD35BD38753}
+	EndGlobalSection
+EndGlobal
