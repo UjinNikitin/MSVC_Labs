@@ -1,3 +1,6 @@
+using MessagesSvc.Clients;
+using MessagesSvc.Clients.Implementation;
+using MessagesSvc.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,10 +24,12 @@ namespace MessagesSvc
         {
 
             services.AddControllers();
+            services.AddSingleton<IStorageProviderClient, LocalStorageProviderClient>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MessagesSvc", Version = "v1" });
             });
+            services.AddHostedService<QueueListener>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
