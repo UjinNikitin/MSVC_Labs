@@ -16,9 +16,9 @@ namespace Facade.Clients.Implementation
             _random = new Random();
             _remoteServiceBaseUrls = new List<string>
             {
-                "http://localhost:9091/",
-                "http://localhost:9092/",
-                "http://localhost:9093/"
+                "http://localhost:9071/",
+                "http://localhost:9072/",
+                "http://localhost:9073/"
             };
         }
 

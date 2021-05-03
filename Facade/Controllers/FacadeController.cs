@@ -29,7 +29,7 @@ namespace Facade.Controllers
             var logs = await _loggingClient.ListLogs();
             var messages = await _messagesClient.GetMessages();
 
-            return $"{string.Join(",", logs.ToArray())}: {messages}";
+            return $"{string.Join(",", logs.ToArray())}: MessagesSvc: {messages}";
         }
 
         [HttpPost]
@@ -43,6 +43,11 @@ namespace Facade.Controllers
 
             _logger.LogInformation(msg);
             await _loggingClient.Log(message);
+
+            for (int i = 0; i < 10; i++)
+            {
+                await _messagesClient.PostMessage(message);
+            }
 
             return Ok();
         }
