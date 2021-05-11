@@ -24,5 +24,5 @@ steps:
   pull: if-not-exists
   image: appleboy/drone-telegram:1.3.9
   settings:
-    token: 1705602276
+    token: 1705602276:AAHBCvRcqnnwLTJVOPuSlWDgTAXBDx5NtS8
     to: 370395749
