@@ -12,13 +12,13 @@ steps:
   pull: if-not-exists
   image: mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
   commands:
-  - dotnet test "*UnitTests/*.csproj" -c Release
+  - dotnet test *UnitTests/*.csproj -c Release
 
 - name: Run integration tests
   pull: if-not-exists
   image: mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
   commands:
-  - dotnet test "*IntegrationTests/*.csproj" -c Release
+  - dotnet test *IntegrationTests/*.csproj -c Release
 
 - name: send telegram notification
   pull: if-not-exists
