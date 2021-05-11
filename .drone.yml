@@ -1,0 +1,28 @@
+kind: pipeline
+name: default
+
+steps:
+- name: Build
+  pull: if-not-exists
+  image: mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
+  commands:
+  - dotnet build MSVC_Labs.sln -c Release
+
+- name: Run unit tests
+  pull: if-not-exists
+  image: mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
+  commands:
+  - dotnet test "*UnitTests/*.csproj" -c Release
+
+- name: Run integration tests
+  pull: if-not-exists
+  image: mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
+  commands:
+  - dotnet test "*IntegrationTests/*.csproj" -c Release
+
+- name: send telegram notification
+  pull: if-not-exists
+  image: appleboy/drone-telegram
+  settings:
+    token: 1705602276
+    to: 370395749

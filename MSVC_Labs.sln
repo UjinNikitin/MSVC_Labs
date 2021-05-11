@@ -5,9 +5,13 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{E8AB584D-9925-41CB-B230-C57884C8845E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagesSvc", "MessagesSvc\MessagesSvc.csproj", "{742D3011-EC44-4C32-9AAA-62EC432BCB03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessagesSvc", "MessagesSvc\MessagesSvc.csproj", "{742D3011-EC44-4C32-9AAA-62EC432BCB03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingSvc", "LoggingSvc\LoggingSvc.csproj", "{DF89BFB3-B98F-46B1-B991-0B22BC174E0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingSvc", "LoggingSvc\LoggingSvc.csproj", "{DF89BFB3-B98F-46B1-B991-0B22BC174E0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadeUnitTests", "FacadeUnitTests\FacadeUnitTests.csproj", "{1AA05269-9FFC-43BD-A0D6-63968A4C02E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadeIntegrationTests", "FacadeIntegrationTests\FacadeIntegrationTests.csproj", "{DC48544C-52C9-4E4D-BED3-CACF98ED761D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{DF89BFB3-B98F-46B1-B991-0B22BC174E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF89BFB3-B98F-46B1-B991-0B22BC174E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF89BFB3-B98F-46B1-B991-0B22BC174E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA05269-9FFC-43BD-A0D6-63968A4C02E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA05269-9FFC-43BD-A0D6-63968A4C02E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA05269-9FFC-43BD-A0D6-63968A4C02E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA05269-9FFC-43BD-A0D6-63968A4C02E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC48544C-52C9-4E4D-BED3-CACF98ED761D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC48544C-52C9-4E4D-BED3-CACF98ED761D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC48544C-52C9-4E4D-BED3-CACF98ED761D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC48544C-52C9-4E4D-BED3-CACF98ED761D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
