@@ -41,7 +41,6 @@ namespace MessagesSvc.Services
         private async Task StartConsumerLoopAsync(CancellationToken stoppingToken)
         {
             _logger.LogInformation("QueueListener Service is starting");
-
             _consumer.Subscribe(Topic);
 
             while (stoppingToken.IsCancellationRequested is false)
