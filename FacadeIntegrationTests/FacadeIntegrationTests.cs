@@ -10,5 +10,12 @@ namespace FacadeIntegrationTests
         {
 
         }
+
+
+        [Fact]
+        public void FacadeIntegrationTest_2()
+        {
+
+        }
     }
 }
